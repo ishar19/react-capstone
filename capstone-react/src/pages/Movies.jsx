@@ -65,6 +65,7 @@ export default function Movies() {
     if (selected.length < 3) {
       return;
     } else {
+      localStorage.setItem("movies", JSON.stringify(selected));
       navigate("/display");
     }
   };
