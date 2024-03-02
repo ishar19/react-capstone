@@ -1,6 +1,6 @@
 export default function UserInfo() {
   const info = JSON.parse(localStorage.getItem("userInfo"));
-  const movies = JSON.parse(localStorage.getItem("movies"));
+  const movies = JSON.parse(localStorage.getItem("selectedMovies"));
   return (
     <div
       style={{
