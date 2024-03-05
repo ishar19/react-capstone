@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 export default function Weather() {
   const [weather, setWeather] = useState(null);
 
-  useEffect(() => {
-    fetch(
-      "https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=rM8TSevwA36UZ5QiHWAt5O86B2s6zGjq"
-    )
-      .then((data) => data.json())
-      .then((data) => setWeather(data))
-      .catch((error) => console.log(error));
-  }, []);
+  // useEffect(() => {
+  //   fetch(
+  //     "https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=rM8TSevwA36UZ5QiHWAt5O86B2s6zGjq"
+  //   )
+  //     .then((data) => data.json())
+  //     .then((data) => setWeather(data))
+  //     .catch((error) => console.log(error));
+  // }, []);
   console.log(weather);
   return (
     <div

@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 
 export default function News() {
   const [news, setNews] = useState(null);
-  useEffect(() => {
-    fetch(
-      "https://api.worldnewsapi.com/search-news?text=cricket&language=en&api-key=e4504c2b21f6411f8ad0697d9ff579fe"
-    )
-      .then((data) => data.json())
-      .then((data) => setNews(data))
-      .catch((error) => console.log(error));
-  }, []);
+  // useEffect(() => {
+  //   fetch(
+  //     "https://api.worldnewsapi.com/search-news?text=cricket&language=en&api-key=e4504c2b21f6411f8ad0697d9ff579fe"
+  //   )
+  //     .then((data) => data.json())
+  //     .then((data) => setNews(data))
+  //     .catch((error) => console.log(error));
+  // }, []);
   console.log(news);
   return (
     <div style={{ marginTop: "20px", border: "2px solid black" }}>
